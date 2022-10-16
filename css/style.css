@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    background-color: rgb(58, 52, 26);
+}
+
+/*navbar*/
+nav{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.web-logo img{
+    width: 90px;  
+}
+
+nav .nav-items{
+    display: flex;
+    margin-left: 170px;
+    gap: 1rem;
+}
+
+.nav-items li{
+    cursor: pointer;
+    list-style-type: none;
+    color: #ffffff;
+    margin-left: 60px;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 100;
+    border: 1px solid transparent;   
+}
+
+nav .nav-active {
+    font-weight: 500 ;
+    font-size: 17px;
+}
+
+nav .btn{
+    padding: 10px 30px;
+    border: 1px solid rgb(160, 143, 54);
+    border-radius: 10px;
+    color: rgb(160, 143, 54);
+    font-weight: 800;
+    background-color: rgb(58, 52, 26);
+    cursor: pointer;
+}
+
+/*Banner-heading*/
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 80px;
+}
+
+.banner-left-section h1{
+    margin-left: 80px;
+    color: #ffffff;
+    font-size: 60px;
+    width: 490px;
+    font-weight: 800;
+}
+
+.banner-right-section{
+    margin-right: 80px;
+    font-weight: 200;
+    width: 50vw;
+}
+
+.banner-right-section p{
+    color: #ffffff;
+    font-size: 19px;
+}
+
+/*Banner-img*/
+
+.banner-justice{
+    margin-top: 80px;
+    height: 500px;
+    width: 100%;
+}
+
+.banner-justice-img img{
+    height: 100vh;
+    /* width: 100vw; */
+    /*controlling img from going out of page*/
+    width: calc(100% - 1px);
+    overflow: auto;
+}
+
+.banner-arrows {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -3px;
+}
+
+.banner-arrow-left {
+    padding: 20px;
+    background-color: #504d40; 
+}
+
+.banner-arrow-left .fa-solid{
+    border: 1px solid #d9bf4e !important;
+}
+
+.banner-arrow-right{
+    padding: 20px;
+    background-color: #d9bf4e;
+}
+
+.banner-arrows .fa-solid{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 32px;
+    padding: 10px 20px;
+}
